@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="top-main">
+        <div class="header">
+            <img src="logo.png" alt="netflix">
+            <ul>
+                <a href=""><li class="sign-in-button">sign in</li></a>
+                <select name="lang" id="lang">
+                    <option value="english">english</option>
+                    <option value="hindi">hindi</option>
+                    <option value="punjabi">punjabi</option>
+                    <option value="spanish">spanish</option>
+                    <option value="portuguese">portuguese</option>
+                    <option value="japenese">japenese</option>
+                </select>                
+            </ul>
+        </div>
+        <div class="top-main-content">
+            <h1>unlimited movies , TV shows and more.</h1>
+            <p class="desc desca">watch anywhere , cancel anytime</p>
+            <p class="desc descb">ready to watch ? Enter your email to create or restart your membership</p>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email"> <input type="submit" value="Get Started" class="label">
+            </form>
+        </div>
+    </div>
+    <div class="bottom-main">
+        <div class="bottom-div">
+            <div class="bottom-side-img a">
+                <img src="feature-2.png" alt="">
+            </div>
+            <div class="bottom-side-content aa">
+                <h1>download your shows to watch online.</h1>
+                <p>save your favourites easily and always have something to watch!</p>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="bottom-side-img b">
+                <img src="feature-3.png" alt="">
+            </div>
+            <div class="bottom-side-content bb">
+                <h1>watch everywhere</h1>
+                <p>stream unlimited movies and TV shows on your phone, tablet, laptop and TV. </p>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="bottom-side-img c">
+                <img src="feature-4.png" alt="">
+            </div>
+            <div class="bottom-side-content cc">
+                <h1>create profiles for children.</h1>
+                <p>send children on their adventures with their favourite characters in a space made just for them--free with your membership.</p>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="bottom-side-img d">
+                <img src="feature-1.png" alt="">
+            </div>
+            <div class="bottom-side-content dd">
+                <h1>enjoy on your TV.</h1>
+                <p>watch on smart TVs , playStations, xbox, chromecast, apple TV, Blue-Ray players and more. </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-main">
+                <h1 class="faq-main-h1">frequently asked questions</h1>
+                <div class="ques a1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">What is netflix?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans a11" id="ans">
+                    <p>Netflix is a popular online streaming platform that offers a vast library of movies, TV shows, documentaries, and original content. It allows subscribers to watch a wide variety of content on-demand, anytime and anywhere, using internet-connected devices such as computers, smartphones, tablets, and smart TVs. With a monthly subscription, users can enjoy unlimited entertainment options without the need for traditional cable or satellite TV services. Netflix is known for its original series and films, making it a leading provider of digital entertainment worldwide.</p>
+                </div>
+                <div class="ques b1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">how much does netflix cost?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans b11" id="ans">
+                    <p>There are four distinct Netflix subscription plans tailored to cater to your entertainment preferences. Whether you're a solo viewer on the go, a family looking to share the experience, or someone who craves the best in picture quality, Netflix has you covered. These plans, namely the Mobile-only Plan, Basic Plan, Standard Plan, and Premium Plan, come at varying price points to suit your budget and offer a world of streaming content at your fingertips. Explore the options and choose the one that best fits your streaming needs. 
+                    </p>
+                </div>
+                <div class="ques c1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">where can i watch?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans c11" id="ans">
+                    <p>
+                        You can watch content on our Netflix by simply logging in and browsing our extensive library of movies and TV shows. Enjoy streaming your favorite entertainment anytime, anywhere!
+                    </p>
+                </div>
+                <div class="ques d1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">how do i cancel?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans d11" id="ans">
+                    <p>
+                        <b style="transition-duration:0ms">1. Log in to Netflix:</b> Visit the Netflix website (www.netflix.com) and sign in to your account using your email address and password. <br>
+
+                        <b style="transition-duration:0ms">2. Access Account Settings:</b> Once logged in, hover over your profile picture in the top right corner of the screen. A dropdown menu will appear. Click on "Account."<br>
+
+                        <b style="transition-duration:0ms">3. Subscription & Billing:</b> Under the "Membership & Billing" section, you'll find the option to cancel your membership. Click on "Cancel Membership."<br>
+
+                        <b style="transition-duration:0ms">4. Confirmation:</b> Netflix will provide information about what will happen when you cancel your subscription, such as the date your account will be deactivated. Review this information, and if you still want to proceed, click on "Finish Cancellation."<br>
+
+                        <b style="transition-duration:0ms">5. Confirmation Email:</b> Netflix will send you a confirmation email to the address associated with your account to confirm the cancellation.<br>
+                    </p>
+                </div>
+                <div class="ques e1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">what can i watch on netflix?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans e11" id="ans">
+                    <p>
+                        Netflix offers a wide range of content including movies, TV series, documentaries, and more. The specific content available on Netflix can vary by region and change over time due to licensing agreements and the addition of new titles. To find out what you can watch on Netflix at any given moment, you can visit the Netflix website or use the Netflix app.
+                    </p>
+                </div>
+                <div class="ques f1" id="ques"  onclick="toggleAnswer(this)">
+                    <p class="ques-p">is netflix good for kids?</p>
+                    <span class="material-symbols-outlined close-icon" onclick="toggleAnswerClose(this)">close</span>
+                </div>
+                <div class="ans f11" id="ans">
+                    <p>
+                        Netflix is a top choice for kids due to its dedicated kids' profiles, ensuring age-appropriate content. The platform offers an extensive library of animated series, educational shows, and family-friendly movies. Parents can set up effective parental controls, restricting access based on age ratings. Netflix also produces high-quality original kids' content, often enjoyed by both kids and parents. The offline viewing feature allows children to watch their favorite shows on the go, making it ideal for travel. Interactive content on Netflix engages kids by allowing them to make choices in the storyline. Overall, Netflix provides a safe and diverse entertainment environment for children and families.
+                    </p>
+                </div>
+            </div>
+            <div class="dummy-div"></div>
+            <div class="email">
+                <form action="">
+                    <p>ready to watch? enter your email to create or restart your membership.</p>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" class="input"> <input type="submit" value="Get Started" class="label">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-main">
+            <div class="heading">
+                <p>Questions? call 000-800-919-1694</p>
+            </div>
+            <div class="links">
+                <a href="">FAQ</a>
+                <a href="">Help centre</a>
+                <a href="">account</a>
+                <a href="">media centre</a>
+                <a href="">investor relations</a>
+                <a href="">index</a>
+                <a href="">ways to watch</a>
+                <a href="">terms of use</a>
+                <a href="">privacy</a>
+                <a href="">cookie preferences</a>
+                <a href="">corporate informataion</a>
+                <a href="">contact us</a>
+                <a href="">speed test</a>
+                <a href="">legal notices</a>
+                <a href="">only on netflix</a>
+            </div>
+            <select name="lang" id="lang">
+                <option value="english">english</option>
+                <option value="hindi">hindi</option>
+                <option value="punjabi">punjabi</option>
+                <option value="spanish">spanish</option>
+                <option value="portuguese">portuguese</option>
+                <option value="japenese">japenese</option>
+            </select>       
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(question) {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle("open");
+        } 
+        function toggleAnswerClose(closeIcon) {
+            const questionDiv = closeIcon.parentElement;
+            const answer = questionDiv.nextElementSibling;
+            answer.classList.remove("open");
+}
+    </script>
+</body>
+</html>

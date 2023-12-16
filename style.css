@@ -1,0 +1,2711 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+:root {
+    --faq_bg:rgb(43, 43, 43);
+    --border:rgba(70, 70, 70, 0.724);
+}
+::selection  {
+    background-color:red;
+    color:white;
+}
+* {
+    margin:0;
+    padding:0;
+    transition-duration:0.4s;
+}
+*:hover {
+    transition-duration:0.4s;
+}
+.top-main {
+    width:100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664) , rgba(0, 0, 0, 0.657)),url(header-image.png);
+    background-size:Cover;
+}
+.header {
+    width:100%;
+    background-color:transparent;
+    height: 80px;
+}
+.header img {
+    float: left;
+    margin:20px;
+    width: 253px;
+    height: 71px;
+}
+.header ul li , .header ul select {
+    float: right;
+    width:100px;
+    font-size:17px;
+    text-transform:capitalize;
+    font-family:sans-serif;
+    padding:10px 10px;
+    background-color:transparent;
+    color:white;
+    text-decoration:None;
+    list-style-type: none;
+    outline:None;
+    cursor: pointer;
+}
+.header ul li {
+    margin-left:20px;
+    color:red;
+    margin-top:20px;
+    width:fit-content;
+    margin-right:20px;
+    border:2px solid red;
+    padding:10px 15px;
+}
+.header ul li:hover {
+    background-color:red;
+    color:White;
+}
+.header ul select {
+    margin-top:20px;
+    border:2px solid white;
+}
+.header ul select option {
+    color:white;
+    background-color:black;
+    margin:5px 10px;
+}
+.top-main-content {
+    width:50%;
+    margin-left:25%;
+    margin-top:150px;
+}
+.top-main-content h1 {
+    color:white;
+    width:80%;
+    margin-left:10%;
+    font-size:48px;
+    text-align: center;
+    text-transform:capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.desc {
+    color:white;
+    font-size:15px;
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform:capitalize;
+}
+.desca {
+    font-size:23px;
+}
+.descb {
+    margin-top:20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+input {
+    width:70%;
+    height: 40px;
+    margin-top:20px;
+    font-size:20px;
+    padding:2px 2px 2px 20px;
+    color:gray;
+}
+.label {
+    float: right;
+    display: flex;
+    margin-top: 20px;
+    padding: 2px 2px 2px 0;
+    width: 25.8%;
+    height: 48px;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.label:hover {
+    background-color:rgb(255, 31, 31);
+    outline:None;
+    border:none;
+}
+.label:focus {
+    outline:none;
+    border:None;
+    color:white;
+}
+input:focus {
+    outline:None;
+    border: none;
+    border:2px solid gray;
+    color:black;
+}
+.bottom-div {
+    width:100%;
+    height: 500px;
+    background-color:black;
+    border-bottom:4px solid var(--border);
+    border-top:4px solid var(--border);
+}
+.bottom-side-img {
+    width:50%;
+    margin:0;
+    height: 100%;
+}
+.a {
+    float: left;
+}
+.bottom-side-img img {
+    width: 85%;
+    height: 85%;
+    margin-top: 2%;
+    filter: brightness(1.1) contrast(1.2) saturate(1.1);
+}
+.bottom-side-content {
+    width:50%;
+    margin:0;
+    text-align:left;
+    color:white;
+}
+.aa {
+    float: right;
+}
+.bottom-side-content h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-top:20%;
+    font-size:60px;
+    text-transform:capitalize;
+}
+.bottom-side-content p {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform:capitalize;
+    font-size:24px;
+}
+.b {
+    float: right;
+}
+.bb {
+    float: left;
+    width:42%;
+}
+.b img {
+    width: 95%;
+    height: 88%;
+
+}
+.c {
+    float: left;
+}
+.cc {
+    float: right;
+    width:43%;
+}
+.d {
+    float: right;
+}
+.dd {
+    float: left;
+    width: 44%;
+}
+.material-symbols-outlined {
+    font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 200,'opsz' 200;
+}
+.faq {
+    border-top:4px solid var(--border);
+    width:100%;
+    height:fit-content;
+    background-color:black;
+    border-bottom:4px solid var(--border);
+}
+.faq-main {
+    width:70%;
+    margin-left:15%;
+    color:white;
+    text-align:Center;
+}
+.faq-main-h1 {
+    font-size:40px;
+    margin-top:5%;
+    text-transform:capitalize;
+    font-family:sans-serif;
+}
+.a1 {
+    margin-top:5%;
+}
+.ques {
+    width:100%;
+    text-align:left;
+    font-size:25px;
+    background-color:var(--faq_bg);
+    height: 50px;
+    cursor:pointer;
+}
+.ques-p {
+    width:80%;
+    float: left;
+    font-size:30px;
+    font-family:sans-serif;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    text-transform:capitalize;
+    padding-left:20px;
+}
+.ques span {
+    float: right;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform: rotate(45deg) scale(1.7 , 1.7);
+    margin-top:10px; 
+    margin-right:17px;
+}
+.ans p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    word-spacing: 3px;
+    line-height: 1.5;
+    padding:1px 10px 20px 10px;
+}
+.ans {
+    width:100%;
+    font-size:25px;
+    background-color:black;
+    text-align:center;
+    color:black;
+    height: 1px;
+    overflow:hidden;
+    transition-duration:0.4s;
+    transition: height 0.4s ease , margin-top 0.2s ease , margin-bottom 0.2s ease ;
+}
+.ques:hover + .ans {
+    transition-duration:0.4s;
+    color:white;
+    background-color:var(--faq_bg);
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.ans:hover{
+    transition-duration:0.4s;
+    color:white;
+    background-color:var(--faq_bg);
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.ques:hover + .a11 {
+    height: 270px;
+}
+.a11:hover {
+    height:270px;
+}
+.ques:hover span {
+    transform: rotate(0deg);
+}
+.ques:hover + .b11 {
+    height: 240px;
+}
+.b11:hover {
+    height:240px;
+}
+.ques:hover + .c11 {
+    height: 100px;
+}
+.c11:hover {
+    height:100px;
+}
+.ques:hover + .d11 {
+    height: 470px;
+}
+.d11:hover {
+    height:470px;
+}
+.d11 b {
+    transition-duration:0ms;
+    word-spacing:3px;
+    font-size:28px;
+}
+.ques:hover + .e11 {
+    height: 170px;
+}
+.e11:hover {
+    height:170px;
+}
+.ques:hover + .f11 {
+    height: 330px;
+}
+.f11:hover {
+    height:330px;
+}
+.dummy-div {
+    width:100%;
+    background-color:black;
+    height: 50px;
+}
+.email {
+    width: 70%;
+    margin-left:15%;
+    text-align:center;
+}
+.email p {
+    margin-top:40px;
+    text-align:center;
+    font-size:20px;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform:capitalize;
+}
+.email input , .email .label {
+    margin-bottom:5%;
+    border:none;
+    outline:None;
+}
+.email .label {
+    height: 44px;
+}
+.email .input{
+    width:71.5%;
+}
+.footer {
+    background-color:Black;
+    border-top:4px solid var(--border);
+    height: fit-content;
+}
+.footer-main {
+    width:60%;
+    margin-left:10%;
+    margin-top:5%;
+    color:rgba(196, 196, 196, 0.64);
+}
+.heading {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size:19px;
+}
+.links {
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto ;
+    margin-top:3%;
+}
+.links a {
+    color:rgba(196, 196, 196, 0.64);
+    text-decoration:none;
+    margin:10px 20px;
+    font-size:19px;
+    text-transform:capitalize;
+    font-family: 'Dekko', cursive;
+}
+.links a:hover {
+    text-decoration:1px solid underline rgba(196, 196, 196, 0.64);
+}
+.footer select {
+    width:fit-content;
+    height: fit-content;
+    font-size:25px;
+    text-transform:capitalize;
+    color:rgba(196, 196, 196, 0.64);
+    background-color:transparent;
+    padding:5px 20px;
+    margin:30px 0;
+    text-align:left;
+}
+.footer option {
+    background-color:black;
+    padding:5px 20px;
+}
+.footer select:hover {
+    cursor: pointer;
+    border:1px solid white;
+    color:white;
+    transition-duration:0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+/* ^..............................................responsive designs starting........................................... */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 380px) {
+    .header ul li , .header ul select {
+        font-size:13px;
+    }
+    .header img {
+        margin: 20px;
+        width: 118px;
+        height: 40px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 100%;
+        margin-left: 0%;
+        font-size: 23px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .descb {     
+        font-size:12px;
+    }
+    input {
+        width: 69%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 21.8%;
+        height: 44px;
+        font-size: 12px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-side-content {
+        clear:both;
+        width:100%;
+        height: 18%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .bottom-side-img {
+        clear:both;
+        width:100%;
+        height: 80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size:22px;
+        text-align:center;
+        width:100%;
+    }
+    .bottom-side-content p {
+        font-size: 14px;
+        margin-top: -3%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .ques:hover + .a11 {
+        height: 370px;
+    }
+    .a11:hover {
+        height: 370px;
+    }
+    .ques:hover + .b11 {
+        height: 345px;
+    }
+    .b11:hover {
+        height: 345px;
+    }
+    .ques:hover + .c11 {
+        height: 126px;
+    }
+    .c11:hover {
+        height: 126px;
+    }
+    .ques:hover + .d11 {
+        height: 618px;
+    }
+    .d11:hover {
+        height: 618px;
+    }
+    .ques:hover + .e11 {
+        height: 220px;
+    }
+    .e11:hover {
+        height: 220px;
+    }    
+    .ques:hover + .f11 {
+        height: 443px;
+    }
+    .f11:hover {
+        height: 443px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 380px) {
+    .header ul li , .header ul select {
+        font-size:13px;
+    }
+    .header img {
+        margin: 20px;
+        width: 118px;
+        height: 40px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 100%;
+        margin-left: 0%;
+        font-size: 23px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .descb {     
+        font-size:12px;
+    }
+    input {
+        width: 69%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 21.8%;
+        height: 44px;
+        font-size: 12px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-side-content {
+        clear:both;
+        width:100%;
+        height: 18%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .bottom-side-img {
+        clear:both;
+        width:100%;
+        height: 80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size:22px;
+        text-align:center;
+        width:100%;
+    }
+    .bottom-side-content p {
+        font-size: 16px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .ques:hover + .ans {
+        padding-top:20px;
+    }
+    .ans:hover {
+        padding-top:20px;
+    }
+    .ques:hover + .a11 {
+        height: 318px;
+    }
+    .a11:hover {
+        height: 318px;
+    }
+    .ques:hover + .b11 {
+        height: 290px;
+    }
+    .b11:hover {
+        height: 290px;
+    }
+    .ques:hover + .c11 {
+        height: 118px;
+    }
+    .c11:hover {
+        height: 118px;
+    }
+    .ques:hover + .d11 {
+        height: 512px;
+    }
+    .d11:hover {
+        height: 512px;
+    }
+    .ques:hover + .e11 {
+        height: 220px;
+    }
+    .e11:hover {
+        height: 220px;
+    }    
+    .ques:hover + .f11 {
+        height: 410px;
+    }
+    .f11:hover {
+        height: 410px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 480px) {
+    .header ul li , .header ul select {
+        font-size: 16px;
+    }
+    .header img {
+        margin: 20px;
+        width: 118px;
+        height: 40px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 100%;
+        margin-left: 0%;
+        font-size: 28px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .descb {     
+        font-size:12px;
+    }
+    input {
+        width: 71%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 21.8%;
+        height: 44.5px;
+        font-size: 12px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-side-content {
+        clear:both;
+        width:100%;
+        height: 18%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .bottom-side-img {
+        clear:both;
+        width:100%;
+        height: 80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size:24px;
+        text-align:center;
+        width:100%;
+    }
+    .bottom-side-content p {
+        font-size: 15px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .ques:hover + .a11 {
+        font-size:18px;
+        height: 333px;
+    }
+    .a11:hover {
+        font-size:18px;
+        height: 333px;
+    }
+    .ques:hover + .b11 {
+        font-size:18px;
+        height: 326px;
+    }
+    .b11:hover {
+        font-size:18px;
+        height: 326px;
+    }
+    .ques:hover + .c11 {
+        font-size:18px;
+        height: 114px;
+    }
+    .c11:hover {
+        font-size:18px;
+        height: 114px;
+    }
+    .ques:hover + .d11 {
+        font-size:18px;
+        height: 531px;
+    }
+    .d11:hover {
+        font-size:18px;
+        height: 531px;
+    }
+    .ques:hover + .e11 {
+        font-size:18px;
+        height: 220px;
+    }
+    .e11:hover {
+        font-size:18px;
+        height: 220px;
+    }    
+    .ques:hover + .f11 {
+        font-size:18px;
+        height: 408px;
+    }
+    .f11:hover {
+        font-size:18px;
+        height: 408px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 580px) {
+    .header ul li , .header ul select {
+        font-size: 16px;
+    }
+    .header img {
+        margin: 20px;
+        width: 118px;
+        height: 40px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 100%;
+        margin-left: 0%;
+        font-size: 29px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .descb {     
+        font-size: 13px;
+    }
+    input {
+        width: 72%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 21.8%;
+        height: 44.5px;
+        font-size: 12px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-side-content {
+        clear:both;
+        width:100%;
+        height: 18%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .bottom-side-img {
+        clear:both;
+        width:100%;
+        height: 80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size:26px;
+        text-align:center;
+        width:100%;
+    }
+    .bottom-side-content p {
+        font-size: 17px;
+        margin-top:1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .ques:hover + .a11 {
+        font-size:18px;
+        height: 275px;
+    }
+    .a11:hover {
+        font-size:18px;
+        height: 275px;
+    }
+    .ques:hover + .b11 {
+        font-size:18px;
+        height: 278px;
+    }
+    .b11:hover {
+        font-size:18px;
+        height: 278px;
+    }
+    .ques:hover + .c11 {
+        font-size:18px;
+        height: 114px;
+    }
+    .c11:hover {
+        font-size:18px;
+        height: 114px;
+    }
+    .ques:hover + .d11 {
+        font-size:18px;
+        height: 453px;
+    }
+    .d11:hover {
+        font-size:18px;
+        height: 453px;
+    }
+    .ques:hover + .e11 {
+        font-size:18px;
+        height: 174px;
+    }
+    .e11:hover {
+        font-size:18px;
+        height: 174px;
+    }    
+    .ques:hover + .f11 {
+        font-size:18px;
+        height: 333px;
+    }
+    .f11:hover {
+        font-size:18px;
+        height: 333px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .header ul li , .header ul select {
+        font-size: 18px;
+    }
+    .header img {
+        margin: 20px;
+        width: 224px;
+        height: 69px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 37px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 26px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 15px;
+        margin-top: 9px;
+    }
+    input {
+        width: 73%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 19px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 22%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 96%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 32px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 14px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size:18px;
+        height: 223px;
+    }
+    .a11:hover {
+        font-size:18px;
+        height: 223px;
+    }
+    .ques:hover + .b11 {
+        font-size:18px;
+        height: 220px;
+    }
+    .b11:hover {
+        font-size:18px;
+        height: 220px;
+    }
+    .ques:hover + .c11 {
+        font-size:18px;
+        height: 87px;
+    }
+    .c11:hover {
+        font-size:18px;
+        height: 87px;
+    }
+    .ques:hover + .d11 {
+        font-size:18px;
+        height: 372px;
+    }
+    .d11:hover {
+        font-size:18px;
+        height: 372px;
+    }
+    .ques:hover + .e11 {
+        font-size:18px;
+        height: 141px;
+    }
+    .e11:hover {
+        font-size:18px;
+        height: 141px;
+    }    
+    .ques:hover + .f11 {
+        font-size:18px;
+        height: 278px;
+    }
+    .f11:hover {
+        font-size:18px;
+        height: 278px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 830px) {
+    .header ul li , .header ul select {
+        font-size: 18px;
+    }
+    .header img {
+        margin: 20px;
+        width: 224px;
+        height: 69px;
+    }
+    
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 47px;
+    }
+    .top-main-content {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 26px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 15px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 2px 2px 2px 20px;
+        color: gray;
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 19px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .top-main {
+        width: 100%;
+        height: 454px;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 22%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 96%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 36px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 18px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size:18px;
+        height: 192px;
+    }
+    .a11:hover {
+        font-size:18px;
+        height: 192px;
+    }
+    .ques:hover + .b11 {
+        font-size:18px;
+        height: 196px;
+    }
+    .b11:hover {
+        font-size:18px;
+        height: 196px;
+    }
+    .ques:hover + .c11 {
+        font-size:18px;
+        height: 87px;
+    }
+    .c11:hover {
+        font-size:18px;
+        height: 87px;
+    }
+    .ques:hover + .d11 {
+        font-size:18px;
+        height: 318px;
+    }
+    .d11:hover {
+        font-size:18px;
+        height: 318px;
+    }
+    .ques:hover + .e11 {
+        font-size:18px;
+        height: 141px;
+    }
+    .e11:hover {
+        font-size:18px;
+        height: 141px;
+    }    
+    .ques:hover + .f11 {
+        font-size:18px;
+        height: 227px;
+    }
+    .f11:hover {
+        font-size:18px;
+        height: 227px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {
+        font-size: 16px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1030px) {
+    .top-main {
+        width: 100%;
+        height: 513px;
+    }
+    .header ul li , .header ul select {
+        font-size: 18px;
+    }
+    .header img {
+        margin: 20px;
+        width: 224px;
+        height: 69px;
+    }
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 47px;
+    }
+    .top-main-content {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 75px;
+    }
+    .desca {
+        font-size: 26px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 15px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 22px;
+        padding: 2px 2px 2px 20px;
+        color: gray;    
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 19px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 22%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 96%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 36px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 18px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size: 20px;
+        height: 192px;
+    }
+    .a11:hover {
+        font-size: 20px;
+        height: 192px;
+    }
+    .ques:hover + .b11 {
+        font-size: 20px;
+        height: 196px;
+    }
+    .b11:hover {
+        font-size: 20px;
+        height: 196px;
+    }
+    .ques:hover + .c11 {
+        font-size: 20px;
+        height: 87px;
+    }
+    .c11:hover {
+        font-size: 20px;
+        height: 87px;
+    }
+    .ques:hover + .d11 {
+        font-size: 20px;
+        height: 336px;
+    }
+    .d11:hover {
+        font-size: 20px;
+        height: 336px;
+    }
+    .ques:hover + .e11 {
+        font-size: 20px;
+        height: 141px;
+    }
+    .e11:hover {
+        font-size: 20px;
+        height: 141px;
+    }    
+    .ques:hover + .f11 {
+        font-size: 20px;
+        height: 227px;
+    }
+    .f11:hover {
+        font-size: 20px;
+        height: 227px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {    
+        font-size: 20px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1180px) {
+    .top-main {
+        width: 100%;
+        height: 620px;
+    }
+    .header ul li , .header ul select {
+        font-size: 24px;
+    }
+    .header ul select {
+        margin-top:20px;
+        border:2px solid white;
+        width:123px;
+    }
+    .header ul li {
+        margin-left:20px;
+        color:red;
+        margin-top:20px;
+        width:fit-content;
+        margin-right:20px;
+        border:2px solid red;
+        padding:10px 15px;
+    }
+    .header img {
+        margin: 20px;
+        width: 337px;
+        height: 95px;
+    }
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 50px;
+    }
+    .top-main-content {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 12%;
+    }
+    .desca {
+        font-size: 29px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 17px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74.5%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 22px;
+        padding: 2px 2px 2px 20px;
+        color: gray;    
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 24px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 15%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 90%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 36px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 18px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size: 20px;
+        height: 157px;
+    }
+    .a11:hover {
+        font-size: 20px;
+        height: 157px;
+    }
+    .ques:hover + .b11 {
+        font-size: 20px;
+        height: 155px;
+    }
+    .b11:hover {
+        font-size: 20px;
+        height: 155px;
+    }
+    .ques:hover + .c11 {
+        font-size: 20px;
+        height: 87px;
+    }
+    .c11:hover {
+        font-size: 20px;
+        height: 87px;
+    }
+    .ques:hover + .d11 {
+        font-size: 20px;
+        height: 336px;
+    }
+    .d11:hover {
+        font-size: 20px;
+        height: 336px;
+    }
+    .ques:hover + .e11 {
+        font-size: 20px;
+        height: 141px;
+    }
+    .e11:hover {
+        font-size: 20px;
+        height: 141px;
+    }    
+    .ques:hover + .f11 {
+        font-size: 20px;
+        height: 227px;
+    }
+    .f11:hover {
+        font-size: 20px;
+        height: 227px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .email p {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 23px;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {    
+        font-size: 20px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1350px) {
+    .top-main {
+        width: 100%;
+        height: 650px;
+    }
+    .header ul li , .header ul select {
+        font-size: 24px;
+    }
+    .header ul select {
+        margin-top:20px;
+        border:2px solid white;
+        width:123px;
+    }
+    .header ul li {
+        margin-left:20px;
+        color:red;
+        margin-top:20px;
+        width:fit-content;
+        margin-right:20px;
+        border:2px solid red;
+        padding:10px 15px;
+    }
+    .header img {
+        margin: 20px;
+        width: 337px;
+        height: 95px;
+    }
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 50px;
+    }
+    .top-main-content {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 12%;
+    }
+    .desca {
+        font-size: 29px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 17px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74.5%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 22px;
+        padding: 2px 2px 2px 20px;
+        color: gray;    
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 24px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 15%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 90%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 49px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 25px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size: 20px;
+        height: 157px;
+    }
+    .a11:hover {
+        font-size: 20px;
+        height: 157px;
+    }
+    .ques:hover + .b11 {
+        font-size: 20px;
+        height: 123px;
+    }
+    .b11:hover {
+        font-size: 20px;
+        height: 123px;
+    }
+    .ques:hover + .c11 {
+        font-size: 20px;
+        height: 64px;
+    }
+    .c11:hover {
+        font-size: 20px;
+        height: 64px;
+    }
+    .ques:hover + .d11 {
+        font-size: 20px;
+        height: 273px;
+    }
+    .d11:hover {
+        font-size: 20px;
+        height: 273px;
+    }
+    .ques:hover + .e11 {
+        font-size: 20px;
+        height: 95px;
+    }
+    .e11:hover {
+        font-size: 20px;
+        height: 95px;
+    }    
+    .ques:hover + .f11 {
+        font-size: 20px;
+        height: 188px;
+    }
+    .f11:hover {
+        font-size: 20px;
+        height: 188px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 17px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 16px;
+    }
+    .email {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .email p {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 23px;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {    
+        font-size: 20px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .top-main {
+        width: 100%;
+        height: 598px;
+    }
+    .header ul li , .header ul select {
+        font-size: 24px;
+    }
+    .header ul select {
+        margin-top:20px;
+        border:2px solid white;
+        width:123px;
+    }
+    .header ul li {
+        margin-left:20px;
+        color:red;
+        margin-top:20px;
+        width:fit-content;
+        margin-right:20px;
+        border:2px solid red;
+        padding:10px 15px;
+    }
+    .header img {
+        margin: 20px;
+        width: 337px;
+        height: 95px;
+    }
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 50px;
+    }
+    .top-main-content {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 12%;
+    }
+    .desca {
+        font-size: 29px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 17px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74.5%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 22px;
+        padding: 2px 2px 2px 20px;
+        color: gray;    
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 24px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 15%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 78%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 49px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 25px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size: 20px;
+        height: 157px;
+    }
+    .a11:hover {
+        font-size: 20px;
+        height: 157px;
+    }
+    .ques:hover + .b11 {
+        font-size: 20px;
+        height: 123px;
+    }
+    .b11:hover {
+        font-size: 20px;
+        height: 123px;
+    }
+    .ques:hover + .c11 {
+        font-size: 20px;
+        height: 64px;
+    }
+    .c11:hover {
+        font-size: 20px;
+        height: 64px;
+    }
+    .ques:hover + .d11 {
+        font-size: 20px;
+        height: 224px;
+    }
+    .d11:hover {
+        font-size: 20px;
+        height: 224px;
+    }
+    .ques:hover + .e11 {
+        font-size: 20px;
+        height: 95px;
+    }
+    .e11:hover {
+        font-size: 20px;
+        height: 95px;
+    }    
+    .ques:hover + .f11 {
+        font-size: 20px;
+        height: 188px;
+    }
+    .f11:hover {
+        font-size: 20px;
+        height: 188px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 25px;
+        width: 76%;
+    }
+    .ans p{
+        font-size: 19px;
+    }
+    .email {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .email p {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 23px;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {    
+        font-size: 20px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .top-main {
+        width: 100%;
+        height: 658px;
+    }
+    .header ul li , .header ul select {
+        font-size: 24px;
+    }
+    .header ul select {
+        margin-top:20px;
+        border:2px solid white;
+        width:123px;
+    }
+    .header ul li {
+        margin-left:20px;
+        color:red;
+        margin-top:20px;
+        width:fit-content;
+        margin-right:20px;
+        border:2px solid red;
+        padding:10px 15px;
+    }
+    .header img {
+        margin: 20px;
+        width: 337px;
+        height: 95px;
+    }
+    .top-main-content h1 {
+        color: white;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 55px;
+    }
+    .top-main-content {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 12%;
+    }
+    .desca {
+        font-size: 33px;
+        margin-top: 7px;
+    }
+    .descb {     
+        font-size: 20px;
+        margin-top: 9px;
+    }
+    input {
+        width: 74.5%;
+        height: 37px;
+        margin-top: 20px;
+        font-size: 22px;
+        padding: 2px 2px 2px 20px;
+        color: gray;    
+    }
+    .label {
+        margin-top: 20px;
+        padding: 2px 2px 2px 0;
+        width: 22%;
+        height: 44.5px;
+        font-size: 24px;
+    }
+    .sign-in-button:active,
+    .sign-in-button:focus {
+        background-color: red;
+        color:white;
+    }
+    .bottom-div {
+        display: flex;
+    }
+    .bottom-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 42%;
+        margin-top: 15%;
+    }
+    .bottom-side-img {
+        width: 61%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-side-img img {
+        width: 78%;
+        height: 89%;
+    }
+    .bottom-side-content h1 {
+        margin-top: -1%;
+        font-size: 49px;
+        padding-right: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-side-content p {
+        font-size: 25px;
+        margin-top: 1%;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .a {
+        float: left;
+        order:1;
+    }
+    .aa {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .b {
+        float: right;
+        order:2;
+    }
+    .bb {
+        float: left;
+        order:1;
+    }
+    .c {
+        float: left;
+        order:1;
+    }
+    .cc {
+        float: right;
+        order:2;
+        margin-left: -6%;
+    }
+    .d {
+        float: right;
+        order:2;
+    }
+    .dd {
+        float: left;
+        order:1;
+    }
+    .ques:hover + .a11 {
+        font-size: 20px;
+        height: 127px;
+    }
+    .a11:hover {
+        font-size: 20px;
+        height: 127px;
+    }
+    .ques:hover + .b11 {
+        font-size: 20px;
+        height: 123px;
+    }
+    .b11:hover {
+        font-size: 20px;
+        height: 123px;
+    }
+    .ques:hover + .c11 {
+        font-size: 20px;
+        height: 64px;
+    }
+    .c11:hover {
+        font-size: 20px;
+        height: 64px;
+    }
+    .ques:hover + .d11 {
+        font-size: 20px;
+        height: 219px;
+    }
+    .d11:hover {
+        font-size: 20px;
+        height: 219px;
+    }
+    .ques:hover + .e11 {
+        font-size: 20px;
+        height: 95px;
+    }
+    .e11:hover {
+        font-size: 20px;
+        height: 95px;
+    }    
+    .ques:hover + .f11 {
+        font-size: 20px;
+        height: 161px;
+    }
+    .f11:hover {
+        font-size: 20px;
+        height: 161px;
+    }    
+    .d11 b {
+        word-spacing: 6px;
+        font-size: 20px;
+    }
+    .faq-main-h1 {
+        font-size: 27px;
+        margin-top: 5%;
+    }
+    .ques {
+        font-size: 25px;
+    }
+    .ques-p {
+        font-size: 27px;
+        width: 76%;
+    }
+    .ans {
+        font-size: 20px;
+    }
+    .email {
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+    .email p {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 23px;
+    }
+    .email .input {
+        width: 74.5%;
+    }
+    .links a {    
+        font-size: 20px;
+    }
+    .email .label {
+        height: 42px;
+    }
+    .footer-main {
+        width: 82%;
+        margin-left: 10%;
+        margin-top: 5%;
+        color: rgba(196, 196, 196, 0.64);
+    }
+    .footer select {
+        font-size:14px;
+    }
+    .links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-top: 3%;
+    }
+}
+
